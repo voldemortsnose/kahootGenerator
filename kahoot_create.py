@@ -154,7 +154,7 @@ for i in range(1, 5):
     for j in range(len(globals()['schemeB_chunk' + str(i)])):
         # Create a new row as a DataFrame
         new_row = pd.DataFrame(columns=columns)
-        new_row.at[0, 'Question'] = "Which one is the correct word?"
+        new_row.at[0, 'Question'] = "Which one is spelled right?"
         new_row.at[0, 'Word ' + str(i)] = globals()['schemeB_chunk' + str(i)].iloc[j, 0]
         
         for p in range(1, 5):
